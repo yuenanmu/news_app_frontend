@@ -1,0 +1,33 @@
+name: Deploy Vue to GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # 当你推送到 main 分支时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup Node ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies 📦
+        run: |
+          cd app_frontend # 👈 注意这里：进入你的前端文件夹
+          npm install
+
+      - name: Build 🛠️
+        run: |
+          cd app_frontend # 👈 注意这里：进入你的前端文件夹
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: app_frontend/dist # 👈 注意这里：指向打包出来的 dist 文件夹
