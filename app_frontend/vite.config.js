@@ -4,5 +4,5 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/BackEndX/', // GitHub Pages 部署路径
+  base: '/news_app_frontend/', // GitHub Pages 部署路径
 })
