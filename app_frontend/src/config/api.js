@@ -7,9 +7,9 @@
 export const apiConfig = {
   // 后端API基础URL
   //baseURL: 'http://127.0.0.1:8000',
-  baseURL: 'http://8.136.127.163:8000',
+  //baseURL: 'http://8.136.127.163:8000',
+  baseURL: 'https://api.allorigins.win/raw?url=http://8.136.127.163:8000',
 }
-
 export const aiChatConfig = {
   // OpenAI API地址
   apiEndpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',

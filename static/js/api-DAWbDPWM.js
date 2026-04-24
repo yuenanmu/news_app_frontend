@@ -1,0 +1,1 @@
+const a={baseURL:"https://api.allorigins.win/raw?url=http://8.136.127.163:8000"},i={apiEndpoint:"https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",apiKey:"sk-9c4d89982a6a4bd3b7494d94751fe81c",model:"qwen3-max-preview"};export{a,i as b};
